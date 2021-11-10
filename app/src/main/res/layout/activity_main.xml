@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/cac"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:onClick="count"
+        android:text="費用計算"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="289dp"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#BFBFBF"
+            android:text=" 距離 (公尺 )："
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/distance"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|right"
+            android:inputType="textPersonName"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="359dp"
+        android:layout_height="67dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="95dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+
+            android:background="#BFBFBF"
+            android:text=" 每(公尺):"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/discount"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|right"
+            android:inputType="textPersonName"
+
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="#BFBFBF"
+            android:text="，加收(元):"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/extra"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|right"
+            android:inputType="textPersonName"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="328dp"
+        android:layout_height="61dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+
+            android:background="#BFBFBF"
+            android:text=" 基本費率 (元)："
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/rate"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|right"
+            android:inputType="textPersonName"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
+
+        android:background="#BFBFBF"
+        android:text="費用 (元)："
+        android:textColor="#FF0000"
+        android:textSize="30dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536"
+
+        />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532"
+
+        />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="244dp"
+        android:layout_height="44dp"
+        android:onClick="Clear"
+        android:text="清除"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
